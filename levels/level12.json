@@ -1,0 +1,1349 @@
+{
+"level_name": "Boss1: the eye of cthulhu",
+"difficulty": 4,
+"enemies": [],
+"starting_pad": [30, 530, 30, 30],
+"goal_pad": [760, 560, 30, 30],
+"trigger_and_enemy_collisions": true,
+"rebuild_level_on_death": true,
+
+"moving_enemies": [
+    {
+        "id": "main_timer",
+        "path_points": [[1080, 290]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [10, 10]
+
+    },
+    {
+        "id": "projectile1",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile2",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile3",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile4",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile5",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile6",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile7",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile8",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile9",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile10",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile11",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile12",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile13",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile14",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile15",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile16",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile17",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile18",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile19",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile20",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile21",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile22",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile23",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile24",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile25",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile26",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile27",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile28",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile29",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile30",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile31",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile31",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile33",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile34",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile35",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile36",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile37",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile38",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile39",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile40",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile41",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile42",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile43",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile44",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile45",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile46",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile47",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile48",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile49",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "projectile50",
+        "path_points": [[380, 280]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [30, 30]
+
+    },
+    {
+        "id": "exit_block",
+        "path_points": [[750, 550], [800, 550]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "size": [50, 50]
+
+    },
+    {
+        "id": "rotor",
+        "path_points": [ [-10, 610], [-10, -10], [810, -10], [810, 610] ],
+        "speed": 90,
+        "move_every_n-th_frame": 1,
+        "after_path_completion": 0,
+        "size": [10, 10]
+
+    },
+    {
+        "id": "rotor3",
+        "path_points": [[90, -10], [810, -10], [810, 610], [-10, 610], [-10, -10]],
+        "speed":90,
+        "move_every_n-th_frame": 1,
+        "after_path_completion": 0,
+        "size": [10, 10]
+
+    },
+    {
+        "id": "rotor2",
+        "path_points": [[710, 610], [-10, 610], [-10, -10],  [810, -10], [810, 610]],
+        "speed": 90,
+        "move_every_n-th_frame": 1,
+        "after_path_completion": 0,
+        "size": [10, 10]
+
+    },
+    {
+        "id": "rotor4",
+        "path_points": [   [810, -10],[810, 610], [-10, 610], [-10, -10]],
+        "speed": 90,
+        "move_every_n-th_frame": 1,
+        "after_path_completion": 0,
+        "size": [10, 10]
+
+    },
+    {
+        "id": "baricade",
+        "path_points": [[0, 265]],
+        "speed": 0,
+        "move_every_n-th_frame": 1,
+        "after_path_completion": 0,
+        "size": [350, 30]
+
+    }
+
+
+],
+"triggers":[
+    {
+        "id": "projectile_dispenser",
+        "position": [395, 295],
+        "size": [1, 1],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": 5,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_remove_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            },
+            {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0,
+                    ["<enemy_x_pos(rotor)>+(<enemy_x_pos(rotor)>-<enemy_x_pos(triggerer_id)>)*12", 
+                    "<enemy_y_pos(rotor)>+(<enemy_y_pos(rotor)>-<enemy_y_pos(triggerer_id)>)*12"]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    4
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_movement_type",
+                "arguments": [
+                    "triggerer_id"
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "projectile_dispenser1",
+        "position": [395, 295],
+        "size": [1, 1],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_remove_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            },
+            {
+                "function_id":"moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    ["(<enemy_x_pos(rotor)>+(<enemy_x_pos(rotor)>-<enemy_x_pos(triggerer_id)>)*-0.9)-20", 
+                    "(<enemy_y_pos(rotor)>+(<enemy_y_pos(rotor)>-<enemy_y_pos(triggerer_id)>)*-0.85)-20"]
+                ]
+            },
+            {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0,
+                    ["<enemy_x_pos(rotor)>+(<enemy_x_pos(rotor)>-<enemy_x_pos(triggerer_id)>)*2", 
+                    "<enemy_y_pos(rotor)>+(<enemy_y_pos(rotor)>-<enemy_y_pos(triggerer_id)>)*2"]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    4
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_movement_type",
+                "arguments": [
+                    "triggerer_id"
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "projectile_dispenser2",
+        "position": [395, 295],
+        "size": [1, 1],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_remove_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            },
+            {
+                "function_id":"moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    ["(<enemy_x_pos(rotor2)>+(<enemy_x_pos(rotor2)>-<enemy_x_pos(triggerer_id)>)*-0.9)-20", 
+                    "(<enemy_y_pos(rotor2)>+(<enemy_y_pos(rotor2)>-<enemy_y_pos(triggerer_id)>)*-0.85)-20"]
+                ]
+            },
+            {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0,
+                    ["<enemy_x_pos(rotor2)>+(<enemy_x_pos(rotor2)>-<enemy_x_pos(triggerer_id)>)*12", 
+                    "<enemy_y_pos(rotor2)>+(<enemy_y_pos(rotor2)>-<enemy_y_pos(triggerer_id)>)*12"]
+                ]
+            },
+            
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    4
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_movement_type",
+                "arguments": [
+                    "triggerer_id"
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "projectile_dispenser3",
+        "position": [395, 295],
+        "size": [1, 1],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_remove_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            },
+            {
+                "function_id":"moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    ["(<enemy_x_pos(rotor3)>+(<enemy_x_pos(rotor3)>-<enemy_x_pos(triggerer_id)>)*-0.9)-20", 
+                    "(<enemy_y_pos(rotor3)>+(<enemy_y_pos(rotor3)>-<enemy_y_pos(triggerer_id)>)*-0.85)-20"]
+                ]
+            },
+            {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0,
+                    ["<enemy_x_pos(rotor3)>+(<enemy_x_pos(rotor3)>-<enemy_x_pos(triggerer_id)>)*12", 
+                    "<enemy_y_pos(rotor3)>+(<enemy_y_pos(rotor3)>-<enemy_y_pos(triggerer_id)>)*12"]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    4
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_movement_type",
+                "arguments": [
+                    "triggerer_id"
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "projectile_dispenser4",
+        "position": [395, 295],
+        "size": [1, 1],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_remove_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            },
+            {
+                "function_id":"moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    ["(<enemy_x_pos(rotor4)>+(<enemy_x_pos(rotor4)>-<enemy_x_pos(triggerer_id)>)*-0.9)-20", 
+                    "(<enemy_y_pos(rotor4)>+(<enemy_y_pos(rotor4)>-<enemy_y_pos(triggerer_id)>)*-0.85)-20"]
+                ]
+            },
+            {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0,
+                    ["<enemy_x_pos(rotor4)>+(<enemy_x_pos(rotor4)>-<enemy_x_pos(triggerer_id)>)*12", 
+                    "<enemy_y_pos(rotor4)>+(<enemy_y_pos(rotor4)>-<enemy_y_pos(triggerer_id)>)*12"]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    4
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_movement_type",
+                "arguments": [
+                    "triggerer_id"
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "collectible1",
+        "position": [20, 220],
+        "size": [30, 30],
+        "color_rgba": [255, 215, 0, 255],
+        "exists": true,
+        "re_enable_rate": -1,
+        "on_enemy_trigger":[],
+        "on_player_trigger":[
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments": [
+                    "rotor",
+                    37
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments": [
+                    "rotor2",
+                    37
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments": [
+                    "rotor3",
+                    37
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments": [
+                    "rotor4",
+                    37
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments": [
+                    "projectile_dispenser",
+                    6
+                ]
+            },
+            {
+                "function_id": "yourself_resize",
+                "arguments":[
+                    1,
+                    1
+                ]
+            },
+            {
+                "function_id": "trigger_set_size",
+                "arguments":[
+                    "collectible2",
+                    [35, 35]
+                ]
+            },
+            {
+                "function_id": "trigger_set_state",
+                "arguments":[
+                    "collectible2",
+                    1
+                ]
+            },
+            {
+                "function_id": "moving_enemy_teleport",
+                "arguments": [
+                    "baricade",
+                    [365, 0]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_size",
+                "arguments": [
+                    "baricade",
+                    [30, 250]
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "collectible2",
+        "position": [420, 20],
+        "size": [1, 1],
+        "color_rgba": [255, 215, 0, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_enemy_trigger":[],
+        "on_player_trigger":[
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments": [
+                    "rotor",
+                    1
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments": [
+                    "rotor2",
+                    1
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments": [
+                    "rotor3",
+                    1
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments": [
+                    "rotor4",
+                    1
+                ]
+            },
+            
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser1",
+                    8
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser2",
+                    8
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser3",
+                    8
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser4",
+                    8
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "phase_3_clock",
+                    90
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser",
+                    -1
+                ]
+            },
+            {
+                "function_id": "yourself_resize",
+                "arguments":[
+                    1,
+                    1
+                ]
+            },
+            {
+                "function_id": "trigger_set_size",
+                "arguments":[
+                    "collectible3",
+                    [55, 55]
+                ]
+            },
+            {
+                "function_id": "trigger_set_state",
+                "arguments":[
+                    "collectible3",
+                    1
+                ]
+            },
+            {
+                "function_id": "trigger_set_size",
+                "arguments":[
+                    "z_phase_3_cosmetic_red",
+                    [800, 600]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_size",
+                "arguments": [
+                    "baricade",
+                    [1, 1]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_teleport",
+                "arguments": [
+                    "baricade",
+                    [-1, -1]
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "collectible3",
+        "position": [150, 120],
+        "size": [1, 1],
+        "color_rgba": [148, 0, 211, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_enemy_trigger":[],
+        "on_player_trigger":[
+            
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser1",
+                    -1
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser2",
+                    -1
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser3",
+                    -1
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "projectile_dispenser4",
+                    -1
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "phase_3_clock",
+                    -1
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "main_clock",
+                    -1
+                ]
+            },
+            {
+                "function_id": "trigger_set_size",
+                "arguments":[
+                    "z_phase_3_cosmetic_red",
+                    [1, 1]
+                ]
+            },
+            {
+                "function_id": "trigger_relocate",
+                "arguments":[
+                    "shot_pod_cosmetic_eye_ball",
+                    [365, 285]
+                ]
+            },
+            {
+                "function_id": "trigger_set_state",
+                "arguments":[
+                    "le_troll",
+                    1
+                ]
+            },
+            {
+                "function_id": "trigger_set_size",
+                "arguments":[
+                    "le_troll",
+                    [300, 200]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "exit_block",
+                    1
+                ]
+            },
+            {
+                "function_id": "moving_enemy_remove_path_point",
+                "arguments":[
+                    "exit_block",
+                    0
+                ]
+            },
+            {
+                "function_id": "yourself_resize",
+                "arguments":[
+                    1,
+                    1
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "projectile_return_bottom",
+        "position": [0, 650],
+        "size": [850, 50],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": true,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    [380, 280]
+                ]
+            }, 
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": "projectile_return_right",
+        "position": [850, 0],
+        "size": [50, 800],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": true,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    [380, 280]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            }
+
+        ]
+    },
+    {
+        "id": "projectile_return_up",
+        "position": [-50, -100],
+        "size": [950, 50],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": true,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    [380, 280]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            }
+
+        ]
+    },
+    {
+        "id": "projectile_return_left",
+        "position": [-100, 0],
+        "size": [50, 850],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": true,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    [380, 280]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            }
+
+        ]
+    },
+    {
+        "id": "phase_3_clock",
+        "position": [395, 295],
+        "size": [1,1],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_remove_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            },
+            {
+                "function_id":"moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    ["(<player_x_pos>+(<player_x_pos>-<enemy_x_pos(triggerer_id)>)*-0.9)-20", 
+                    "(<player_y_pos>+(<player_y_pos>-<enemy_y_pos(triggerer_id)>)*-0.85)-20"]
+                ]
+            },
+            {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0,
+                    ["<player_x_pos>+(<player_x_pos>-<enemy_x_pos(triggerer_id)>)*12", 
+                    "<player_y_pos>+(<player_y_pos>-<enemy_y_pos(triggerer_id)>)*12"]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    8
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_movement_type",
+                "arguments": [
+                    "triggerer_id"
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "main_clock",
+        "position": [1080, 290],
+        "size": [20, 20],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": 5,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "trigger_relocate",
+                "arguments":[
+                    "shot_pod_cosmetic_eye_ball",
+                    [
+                        "355 + <player_x_pos>/36",
+                        "255 + <player_y_pos>/26"
+                    ]
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "shot_pod_cosmetic_bottom_rect",
+        "position": [350, 250],
+        "size": [60, 60],
+        "color_rgba": [255, 0, 0, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[]
+    },
+    {
+        "id": "shot_pod_cosmetic_eye_ball",
+        "position": [365, 265],
+        "size": [30, 30],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[]
+    },
+    {
+        "id": "z_phase_3_cosmetic_red",
+        "position": [0, 0],
+        "size": [1, 1],
+        "color_rgba": [255, 0, 0, 60],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[]
+    },
+    {
+        "id": "le_troll_fire",
+        "position": [395, 295],
+        "size": [1, 1],
+        "color_rgba": [0, 0, 255, 255],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[],
+        "on_enemy_trigger":[
+            {
+                "function_id": "moving_enemy_remove_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0
+                ]
+            },
+            {
+                "function_id":"moving_enemy_teleport",
+                "arguments":[
+                    "triggerer_id",
+                    ["(<player_x_pos>+(<player_x_pos>-<enemy_x_pos(triggerer_id)>)*-0.9)-20", 
+                    "(<player_y_pos>+(<player_y_pos>-<enemy_y_pos(triggerer_id)>)*-0.85)-20"]
+                ]
+            },
+            {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "triggerer_id",
+                    0,
+                    ["<player_x_pos>+260", 
+                    "<player_y_pos>+110"]
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_speed",
+                "arguments":[
+                    "triggerer_id",
+                    12
+                ]
+            },
+            {
+                "function_id": "moving_enemy_set_movement_type",
+                "arguments": [
+                    "triggerer_id"
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+        ]
+    },
+    {
+        "id": "le_troll",
+        "position": [630, 465],
+        "size": [1,1],
+        "color_rgba": [255, 255, 255, 0],
+        "exists": false,
+        "re_enable_rate": -1,
+        "on_player_trigger":[
+            {
+                "function_id": "trigger_set_state",
+                "arguments":[
+                    "le_troll_fire",
+                    1
+                ]
+            },
+            {
+                "function_id": "trigger_set_re_enable_rate",
+                "arguments":[
+                    "main_clock",
+                    10
+                ]
+            },
+            {
+                "function_id": "yourself_resize",
+                "arguments":[
+                    1,
+                    1
+                ]
+            },
+            {
+                "function_id": "yourself_disable",
+                "arguments":[]
+            }
+
+        ],
+        "on_enemy_trigger":[]
+    }
+]
+}

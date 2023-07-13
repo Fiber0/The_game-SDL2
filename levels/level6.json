@@ -1,0 +1,236 @@
+{
+    "level_name": "meet the trigger",
+    "enemies": [[650, 240, 40, 40]],
+    "starting_pad": [300, 240, 30, 30],
+    "goal_pad": [100, 240, 30, 30],
+    "rebuild_level_on_death": true,
+    "moving_enemies": [
+        {
+            "id": "exit_block_up",
+            "path_points": [[41, 180]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [150,50]
+
+        },
+        {
+            "id": "exit_block_down",
+            "path_points": [[41, 281]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [150,50]
+
+        },
+        {
+            "id": "exit_block_left",
+            "path_points": [[40, 180]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [50,150]
+
+        },
+        {
+            "id": "exit_block_right",
+            "path_points": [[141, 180]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [50,150]
+
+        }
+    ],
+    "triggers":[
+        {
+            
+            "position": [600, 240],
+            "size": [40, 40],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": true,
+            
+            "on_player_trigger":[
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                },
+                {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "exit_block_left",
+                    1,
+                    [-50, 180]
+                ]
+
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "exit_block_left",
+                        2
+                    ]
+
+                },
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block_left",
+                        0
+                    ]
+
+                }
+                
+
+            ]
+        },
+
+        {
+            
+            "position": [700, 240],
+            "size": [40, 40],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": true,
+            
+            "on_player_trigger":[
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                },
+                {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "exit_block_right",
+                    1,
+                    [850, 180]
+                ]
+
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "exit_block_right",
+                        2
+                    ]
+
+                },
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block_right",
+                        0
+                    ]
+
+                }
+                
+
+            ]
+        },
+
+        {
+            
+            "position": [650, 190],
+            "size": [40, 40],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": true,
+            
+            "on_player_trigger":[
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                },
+                {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "exit_block_up",
+                    1,
+                    [41, -50]
+                ]
+
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "exit_block_up",
+                        2
+                    ]
+
+                },
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block_up",
+                        0
+                    ]
+
+                }
+                
+
+            ]
+        },
+
+        {
+            
+            "position": [650, 290],
+            "size": [40, 40],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": true,
+            
+            "on_player_trigger":[
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                },
+                {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "exit_block_down",
+                    1,
+                    [41, 650]
+                ]
+
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "exit_block_down",
+                        2
+                    ]
+
+                },
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block_down",
+                        0
+                    ]
+                }     
+            ]
+        }
+    ]    
+    
+}

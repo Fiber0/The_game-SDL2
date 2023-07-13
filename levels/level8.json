@@ -1,0 +1,103 @@
+{
+    "level_name": "lava run",
+    "enemies": [[0, 0, 520, 320], [0, 460, 120, 140], [240, 320, 280, 140], [660, 120, 140, 480]],
+    "starting_pad": [80, 370, 30, 30],
+    "goal_pad": [750, 40, 30, 30],
+    "trigger_and_enemy_collisions": false,
+    "rebuild_level_on_death": true,
+    "moving_enemies": [
+        {
+            "id": "wall_of_block",
+            "path_points": [[-800, 0]],
+            "speed": 1,
+            "move_every_n-th_frame": 1,
+            "size": [800,600]
+
+        },
+        {
+            "id": "tunell_a_left_right",
+            "path_points": [[120, 460], [620, 460]],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [40,70]
+
+        },
+        {
+            "id": "tunell_a_right_left",
+            "path_points": [[620, 530], [120, 530]],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [40,70]
+
+        },
+        {
+            "id": "tunell_b_a",
+            "path_points": [[520, 350], [630, 350]],
+            "speed": 2,
+            "move_every_n-th_frame": 1,
+            "size": [30,30]
+
+        },
+        {
+            "id": "tunell_b_b",
+            "path_points": [[520, 260], [630, 260]],
+            "speed": 2,
+            "move_every_n-th_frame": 1,
+            "size": [30,30]
+
+        },
+        {
+            "id": "tunell_b_c",
+            "path_points": [[520, 170], [630, 170]],
+            "speed": 2,
+            "move_every_n-th_frame": 1,
+            "size": [30,30]
+
+        },
+        {
+            "id": "tunell_b_d",
+            "path_points": [[630, 0], [520, 0]],
+            "speed": 2,
+            "move_every_n-th_frame": 1,
+            "size": [30,120]
+
+        }
+
+    ],
+    "triggers":[
+        {
+            
+            "position": [120, 460],
+            "size": [120, 5],
+            "color_rgba": [255, 255, 255, 255],
+            "exists": true,
+            
+            "on_player_trigger":[
+                {
+                "function_id":"moving_enemy_insert_path_point",
+                "arguments":[
+                    "wall_of_block",
+                    1,
+                    [0,0]
+                ]
+
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                }
+
+            ]
+        }
+    ]
+
+
+
+}

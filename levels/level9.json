@@ -1,0 +1,91 @@
+{
+    "level_name": "pipe",
+    "enemies": [[0, 0, 150, 120], [0, 480, 150, 120], [650, 480, 150, 120], [650, 0, 150, 120], [150, 0, 500, 20], [150, 580, 500, 20]],
+    "starting_pad": [10, 290, 30, 30],
+    "goal_pad": [60, 160, 30, 30],
+    "trigger_and_enemy_collisions": false,
+    "rebuild_level_on_death": true,
+    "moving_enemies": [
+        {
+            "id": "exit_block",
+            "path_points": [[30,130 ], [800, 330], [800, 330]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [80,80]
+
+        },
+        {
+            "id": "pipe_up",
+            "path_points": [[150,200 ], [150, 80], [ 150, 320]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [500,40]
+
+        },
+        {
+            "id": "pipe_bottom",
+            "path_points": [[150,380 ], [150, 260], [150, 500]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [500,40]
+
+        }, 
+        {
+            "id": "top_holding_pole",
+            "path_points": [[385,-200 ], [385, -320], [385, -80]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [30,400]
+
+        },
+        {
+            "id": "bottom_holding_pole",
+            "path_points": [[385,400 ], [385, 280], [385, 520]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [30,400]
+
+        }
+        
+    ],
+    "triggers":[
+        {
+                    
+            "position": [740, 270],
+            "size": [30, 60],
+            "color_rgba": [148, 0, 211, 255],
+            "exists": true,
+            
+            "on_player_trigger":[
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                },
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block",
+                        0
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_set_speed",
+                    "arguments":[
+                        "exit_block",
+                        16
+                    ]
+
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                }
+            ]   
+        }
+    ]
+}
+

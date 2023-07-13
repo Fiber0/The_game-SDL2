@@ -1,0 +1,534 @@
+{
+    "level_name": "press_space_to_dash",
+    "enemies": [],
+    "starting_pad": [700, 570, 20, 20],
+    "goal_pad": [380, 20, 30, 30],
+    "trigger_and_enemy_collisions": true,
+    "rebuild_level_on_death": true,
+    "action_button": true,
+    "action_button_call": "on_space_pressed",
+
+    "moving_enemies": [
+        {
+            "id": "dash_recharge_indicator_en",
+            "path_points": [[0,0]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 1,
+            "size": [120, 600]
+    
+        },
+        {
+            "id": "dash_recharge_indicator_en2",
+            "path_points": [[680,0]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 1,
+            "size": [120, 530]
+    
+        },
+        {
+            "id": "dash_recharge_indicator_en3",
+            "path_points": [[750,530]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 1,
+            "size": [50, 70]
+    
+        },
+        {
+            "id": "mover1",
+            "path_points": [[120, -50], [120, 650]],
+            "speed": 2,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 1,
+            "size": [560, 50]
+    
+        },
+        {
+            "id": "mover2",
+            "path_points": [[120, 280], [120, 650]],
+            "speed": 2,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 1,
+            "size": [560, 50]
+    
+        },
+        {
+            "id": "triggerer",
+            "path_points": [[850, 300]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [1, 1]
+    
+        },
+        {
+            "id": "triggerer2",
+            "path_points": [[860, 300]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [1, 1]
+    
+        }
+        
+    ],
+    "triggers":[
+        {
+            "id": "on_space_pressed",
+            "position": [-20, -20],
+            "size": [1, 1],
+            "color_rgba": [0, 0, 255, 0],
+            "exists": true,
+            "re_enable_rate": 100,
+            "on_action_trigger":[
+                {
+                    "function_id": "trigger_set_color",
+                    "arguments":[
+                        "dash_recharge_indicator",
+                        [255, 0, 0, 255]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_color",
+                    "arguments":[
+                        "dash_recharge_indicator2",
+                        [255, 0, 0, 255]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_color",
+                    "arguments":[
+                        "dash_recharge_indicator3",
+                        [255, 0, 0, 255]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "dash_direction_top",
+                        ["<player_x_pos>+15", "<player_y_pos>-5"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "dash_direction_down",
+                        ["<player_x_pos>+15", "<player_y_pos>+25"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "dash_direction_left",
+                        ["<player_x_pos>-5", "<player_y_pos>+15"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "dash_direction_right",
+                        ["<player_x_pos>+25", "<player_y_pos>+15"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "a_dash_direction_left_up",
+                        ["<player_x_pos>-3", "<player_y_pos>-3"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "a_dash_direction_right_up",
+                        ["<player_x_pos>+23", "<player_y_pos>-3"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "aa_dash_direction_left_down",
+                        ["<player_x_pos>-3", "<player_y_pos>+23"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "a_dash_direction_right_down",
+                        ["<player_x_pos>+23", "<player_y_pos>+23"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "on_action_button_recharge",
+                        80
+                    ]
+                },
+                {
+
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        
+        {
+            "id": "on_action_button_recharge",
+            "position": [860, 300],
+            "size": [1, 1],
+            "color_rgba": [0, 0, 255, 0],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "trigger_set_color",
+                    "arguments":[
+                        "dash_recharge_indicator",
+                        [0, 255, 0, 255]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_color",
+                    "arguments":[
+                        "dash_recharge_indicator2",
+                        [0, 255, 0, 255]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_color",
+                    "arguments":[
+                        "dash_recharge_indicator3",
+                        [0, 255, 0, 255]
+                    ]
+                },
+
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "on_action_button_recharge",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "tp_enemies_back",
+            "position": [120, 640],
+            "size": [10, 10],
+            "color_rgba": [0, 0, 255, 0],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id":"moving_enemy_teleport",
+                    "arguments":[
+                        "triggerer_id",
+                        [120, -50]
+                    ]
+                }   
+            ]
+        },
+        {
+            "id": "reset_mv_triggers",
+            "position": [850, 300],
+            "size": [1, 1],
+            "color_rgba": [0, 0, 255, 0],
+            "exists": false,
+            "re_enable_rate": -1,
+            "on_enemy_trigger":[
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "dash_direction_top",
+                        [850, 200]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "dash_direction_down",
+                        [850, 200]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "dash_direction_left",
+                        [850, 200]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "dash_direction_right",
+                        [850, 200]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "a_dash_direction_left_up",
+                        [850, 200]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "a_dash_direction_right_up",
+                        [850, 200]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "aa_dash_direction_left_down",
+                        [850, 200]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "a_dash_direction_right_down",
+                        [850, 200]
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+
+            ]
+        },
+        {
+            "id": "dash_direction_top",
+            "position": [850, 200],
+            "size": [1, 1],
+            "color_rgba": [0, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[
+                {
+                    "function_id": "player_teleport",
+                    "arguments":[
+                        ["<player_x_pos>","<player_y_pos>-120"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "reset_mv_triggers",
+                        1
+                    ]
+                }
+                
+            ],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "dash_direction_down",
+            "position": [850, 200],
+            "size": [1, 1],
+            "color_rgba": [0, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[
+                {
+                    "function_id": "player_teleport",
+                    "arguments":[
+                        ["<player_x_pos>","<player_y_pos>+120"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "reset_mv_triggers",
+                        1
+                    ]
+                }
+            ],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "dash_direction_left",
+            "position": [850, 200],
+            "size": [1, 1],
+            "color_rgba": [0, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[
+                {
+                    "function_id": "player_teleport",
+                    "arguments":[
+                        ["<player_x_pos>-120","<player_y_pos>"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "reset_mv_triggers",
+                        1
+                    ]
+                }
+            ],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "dash_direction_right",
+            "position": [850, 200],
+            "size": [1, 1],
+            "color_rgba": [0, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[
+                {
+                    "function_id": "player_teleport",
+                    "arguments":[
+                        ["<player_x_pos>+120","<player_y_pos>"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "reset_mv_triggers",
+                        1
+                    ]
+                }
+            ],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "a_dash_direction_left_up",
+            "position": [850, 200],
+            "size": [1, 1],
+            "color_rgba": [255, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[
+                {
+                    "function_id": "player_teleport",
+                    "arguments":[
+                        ["<player_x_pos>-120","<player_y_pos>-120"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "reset_mv_triggers",
+                        1
+                    ]
+                }
+            ],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "a_dash_direction_right_up",
+            "position": [850, 200],
+            "size": [1, 1],
+            "color_rgba": [255, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[
+                {
+                    "function_id": "player_teleport",
+                    "arguments":[
+                        ["<player_x_pos>+120","<player_y_pos>-120"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "reset_mv_triggers",
+                        1
+                    ]
+                }
+            ],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "aa_dash_direction_left_down",
+            "position": [850, 200],
+            "size": [1, 1],
+            "color_rgba": [255, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[
+                {
+                    "function_id": "player_teleport",
+                    "arguments":[
+                        ["<player_x_pos>-120","<player_y_pos>+120"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "reset_mv_triggers",
+                        1
+                    ]
+                }
+            ],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "a_dash_direction_right_down",
+            "position": [850, 200],
+            "size": [1, 1],
+            "color_rgba": [255, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger":[
+                {
+                    "function_id": "player_teleport",
+                    "arguments":[
+                        ["<player_x_pos>+120","<player_y_pos>+120"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "reset_mv_triggers",
+                        1
+                    ]
+                }
+            ],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "dash_recharge_indicator",
+            "position": [0, 0],
+            "size": [120, 600],
+            "color_rgba": [0, 255, 0, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "dash_recharge_indicator2",
+            "position": [680, 0],
+            "size": [120, 530],
+            "color_rgba": [0, 255, 0, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[]
+        },
+        {
+            "id": "dash_recharge_indicator3",
+            "position": [750,530],
+            "size": [50, 70],
+            "color_rgba": [0, 255, 0, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[]
+        }
+    ]
+
+}

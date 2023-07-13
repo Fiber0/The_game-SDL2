@@ -1,0 +1,474 @@
+{
+    "level_name": "huntdown",
+    "difficulty": 3,
+    "enemies": [
+
+        [180, 180, 50, 50], [560, 180, 50, 50], 
+        [180, 380, 50, 50], [560, 380, 50, 50], 
+        [0, 0, 10, 600], [0, 0, 800, 10], 
+        [790, 0, 10, 600], [0, 590, 800, 10]
+    ],
+    "starting_pad": [385, 285, 30, 30],
+    "goal_pad": [745, 285, 30, 30],
+    "trigger_and_enemy_collisions": true,
+    "rebuild_level_on_death": true,
+    "moving_enemies": [
+        {
+            "id": "tracker1",
+            "path_points": [[20,520 ]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [60,60]
+
+        },
+        {
+            "id": "tracker2",
+            "path_points": [[720,520 ]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [60,60]
+
+        },
+        {
+            "id": "tracker3",
+            "path_points": [[20,20 ]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [60,60]
+
+        },
+        {
+            "id": "tracker4",
+            "path_points": [[720,20 ]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [60,60]
+
+        },
+        {
+            "id": "start_block_left",
+            "path_points": [[335,235 ]],
+            "speed": 10,
+            "move_every_n-th_frame": 1,
+            "size": [41,130]
+        },
+        {
+            "id": "start_block_right",
+            "path_points": [[423,235 ]],
+            "speed": 10,
+            "move_every_n-th_frame": 1,
+            "size": [41,130]
+        },
+        {
+            "id": "start_block_bottom",
+            "path_points": [[335,325 ]],
+            "speed": 10,
+            "move_every_n-th_frame": 1,
+            "size": [127, 41]
+        },
+        {
+            "id": "timer",
+            "path_points": [[900, 60 ]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [25,25]
+        },
+        {
+            "id": "exit_block",
+            "path_points": [[735,275 ]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [50, 50]
+        }
+      
+    ],
+    "triggers":[
+        {
+            "id": "collectible1",
+            "position": [680, 290],
+            "size": [1, 1],
+            "color_rgba": [0, 215, 0, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+            "on_enemy_trigger":[],
+            "on_player_trigger":[
+                {
+                    "function_id": "player_set_speed_per_second",
+                    "arguments": [
+                        600
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments": [
+                        "tracker1",
+                        3
+                    ]
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_size",
+                    "arguments":[
+                        "collectible2",
+                        [20, 20]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "collectible2",
+                        1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "collectible2",
+            "position": [30, 290],
+            "size": [1, 1],
+            "color_rgba": [255, 215, 0, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+            "on_enemy_trigger":[],
+            "on_player_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments": [
+                        "tracker2",
+                        4
+                    ]
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_size",
+                    "arguments":[
+                        "collectible3",
+                        [20, 20]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "collectible3",
+                        1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "collectible3",
+            "position": [740, 540],
+            "size": [1, 1],
+            "color_rgba": [255, 215, 0, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+            "on_enemy_trigger":[],
+            "on_player_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments": [
+                        "tracker3",
+                        5
+                    ]
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_size",
+                    "arguments":[
+                        "collectible4",
+                        [20, 20]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "collectible4",
+                        1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "collectible4",
+            "position": [40, 40],
+            "size": [1, 1],
+            "color_rgba": [148, 0, 211, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+            "on_enemy_trigger":[],
+            "on_player_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments": [
+                        "tracker4",
+                        6
+                    ]
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_insert_path_point",
+                    "arguments":[
+                        "exit_block",
+                        0,
+                        [800,275 ]
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments": [
+                        "exit_block",
+                        5
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_movement_type",
+                    "arguments": [
+                        "exit_block"
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "tracker_update",
+            "position": [900, 100],
+            "size": [20, 20],
+            "color_rgba": [0, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": 5,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                
+                {
+                    "function_id": "moving_enemy_clear_path_points",
+                    "arguments":[
+                        "tracker1"
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_clear_path_points",
+                    "arguments":[
+                        "tracker2"
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_clear_path_points",
+                    "arguments":[
+                        "tracker3"
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_clear_path_points",
+                    "arguments":[
+                        "tracker4"
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "tracker1",
+                        0,
+                        ["<player_x_pos>", "<player_y_pos>"]
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "tracker2",
+                        0,
+                        ["<player_x_pos>", "<player_y_pos>"]
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "tracker3",
+                        0,
+                        ["<player_x_pos>", "<player_y_pos>"]
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "tracker4",
+                        0,
+                        ["<player_x_pos>", "<player_y_pos>"]
+                    ]
+
+                },
+                {
+                    "function_id": "moving_enemy_set_movement_type",
+                    "arguments": [
+                        "tracker1"
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_movement_type",
+                    "arguments": [
+                        "tracker2"
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_movement_type",
+                    "arguments": [
+                        "tracker3"
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_movement_type",
+                    "arguments": [
+                        "tracker4"
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "trackers_enabler",
+            "position": [376, 235],
+            "size": [47, 43],
+            "color_rgba": [255, 255, 255, 255],
+            "exists": true,
+        
+            "on_enemy_trigger":[],
+            "on_player_trigger":[
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_size",
+                    "arguments":[
+                        "collectible1",
+                        [20, 20]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "collectible1",
+                        1
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_remove_path_point",
+                    "arguments":[
+                        "start_block_left",
+                        0
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "start_block_left",
+                        0,
+                        [-50,235 ]
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_remove_path_point",
+                    "arguments":[
+                        "start_block_right",
+                        0
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "start_block_right",
+                        0,
+                        [800,235 ]
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_remove_path_point",
+                    "arguments":[
+                        "start_block_bottom",
+                        0
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "start_block_bottom",
+                        0,
+                        [335,600 ]
+                    ]
+
+                },
+                {
+                    "function_id":"moving_enemy_teleport",
+                    "arguments":[
+                        "timer",
+                        [900,100 ]
+                    ]
+
+                }
+            ]
+        }    
+    ]
+}

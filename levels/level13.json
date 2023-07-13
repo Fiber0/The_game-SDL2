@@ -1,0 +1,617 @@
+{
+    "level_name": "wall run",
+    "enemies": [[0, 0, 800, 150], [0, 450, 800, 150]],
+    "starting_pad": [20, 280, 20, 20],
+    "goal_pad": [700, 280, 20, 20],
+    "rebuild_level_on_death": true,
+    "trigger_and_enemy_collisions": true,
+    "moving_enemies": [
+        {
+            "id": "block1",
+            "path_points": [[-60, 150]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block12",
+            "path_points": [[-60, 150]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block2",
+            "path_points": [[-60, 210]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block22",
+            "path_points": [[-60, 210]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block3",
+            "path_points": [[-60, 270]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block32",
+            "path_points": [[-60, 270]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block4",
+            "path_points": [[-60, 330]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block42",
+            "path_points": [[-60, 330]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block5",
+            "path_points": [[-60, 390]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block52",
+            "path_points": [[-60, 390]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block13",
+            "path_points": [[-60, 150]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block14",
+            "path_points": [[-60, 150]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block15",
+            "path_points": [[-60, 150]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block16",
+            "path_points": [[-60, 150]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block23",
+            "path_points": [[-60, 210]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block24",
+            "path_points": [[-60, 210]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block25",
+            "path_points": [[-60, 210]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block26",
+            "path_points": [[-60, 210]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block33",
+            "path_points": [[-60, 270]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block34",
+            "path_points": [[-60, 270]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block35",
+            "path_points": [[-60, 270]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block36",
+            "path_points": [[-60, 270]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block43",
+            "path_points": [[-60, 330]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block44",
+            "path_points": [[-60, 330]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block45",
+            "path_points": [[-60, 330]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block46",
+            "path_points": [[-60, 330]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block53",
+            "path_points": [[-60, 390]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block54",
+            "path_points": [[-60, 390]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block55",
+            "path_points": [[-60, 390]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "block56",
+            "path_points": [[-60, 390]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "after_path_completion": 2,
+            "size": [30, 60]
+    
+        },
+        {
+            "id": "tracker",
+            "path_points": [[-50, -50]],
+            "speed": 0,
+            "move_every_n-th_frame": 2,
+            "after_path_completion": 0,
+            "size": [80,80 ]
+    
+        },
+        {
+            "id": "start_blocker",
+            "path_points": [[100, 150]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [50, 300]
+    
+        },
+        {
+            "id": "sequence_timer_e",
+            "path_points": [[380, 680]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [30, 30]
+    
+        }
+    ],
+    "triggers":[
+        { 
+            "id": "start_blocker_release",
+            "position": [300, 150],
+            "size": [50, 300],
+            "color_rgba": [255, 255, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger": [],
+            "on_enemy_trigger":[
+                {
+                    "function_id":"moving_enemy_teleport",
+                    "arguments":[
+                        "start_blocker",
+                        [-300, 0]
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "tracker",
+                        1
+                        
+                    ]
+
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }    
+            ]
+        },
+        { 
+            "id": "block_dispenser_1",
+            "position": [850, 150],
+            "size": [1, 1],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "triggerer_id",
+                        3
+                        
+                    ]
+
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        { 
+            "id": "block_dispenser_2",
+            "position": [850, 210],
+            "size": [1, 1],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "triggerer_id",
+                        3
+                        
+                    ]
+
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        { 
+            "id": "block_dispenser_3",
+            "position": [850, 270],
+            "size": [1, 1],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "triggerer_id",
+                        3
+                        
+                    ]
+
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        { 
+            "id": "block_dispenser_4",
+            "position": [850, 330],
+            "size": [1, 1],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "triggerer_id",
+                        3
+                        
+                    ]
+
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        { 
+            "id": "block_dispenser_5",
+            "position": [850, 390],
+            "size": [1, 1],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "triggerer_id",
+                        3
+                        
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        { 
+            "id": "teleport_blocks_back",
+            "position": [-60, 150],
+            "size": [1, 300],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_set_speed",
+                    "arguments":[
+                        "triggerer_id",
+                        0
+                        
+                    ]
+
+                },
+                
+                {
+                    "function_id":"moving_enemy_teleport",
+                    "arguments":[
+                        "triggerer_id",
+                        [850, "<enemy_y_pos(triggerer_id)>"]
+                    ]
+                }
+                
+            ]
+        },
+        { 
+            "id": "main_timer",
+            "position": [380, 680],
+            "size": [25, 25],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": false,
+            "re_enable_rate": 1,
+
+            "on_enemy_trigger":[
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "block_dispenser_1",
+                        1
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "block_dispenser_2",
+                        1
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "block_dispenser_3",
+                        1
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "block_dispenser_4",
+                        1
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "block_dispenser_5",
+                        1
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_clear_path_points",
+                    "arguments":[
+                        "tracker"
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "tracker",
+                        0,
+                        ["<player_x_pos>", "<player_y_pos>"]
+                    ]
+
+                },
+                {
+                    "function_id": "moving_enemy_set_movement_type",
+                    "arguments": [
+                        "tracker"
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "previous_block_blocker_pos",
+                        [800, "<trigger_y_pos(block_blocker)>"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_relocate",
+                    "arguments":[
+                        "block_blocker",
+                        [800, "150+((0r4)*60)"]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "main_timer",
+                        "60+( (0a(<trigger_y_pos(block_blocker)>-<trigger_y_pos(previous_block_blocker_pos)>)) /60*8)"
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+                
+            ]
+        },
+        { 
+            "id": "block_blocker",
+            "position": [800, 150],
+            "size": [50, 60],
+            "color_rgba": [76, 76, 255, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_player_trigger": [],
+            "on_enemy_trigger":[
+                {
+                    "function_id":"moving_enemy_teleport",
+                    "arguments":[
+                        "triggerer_id",
+                        [-60, "<enemy_y_pos(triggerer_id)>"]
+                    ]
+                }    
+            ]
+        },
+         { 
+            "id": "previous_block_blocker_pos",
+            "position": [800, 150],
+            "size": [30, 30],
+            "color_rgba": [0, 255, 255, 255],
+            "exists": false,
+            "re_enable_rate": -1,
+
+            "on_enemy_trigger":[ ]
+        }
+    ]
+
+
+
+}

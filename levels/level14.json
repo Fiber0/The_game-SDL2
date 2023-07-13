@@ -1,0 +1,1422 @@
+{
+    "level_name": "scramble",
+    "enemies": [
+        [0, 0, 60, 600], 
+        [130, 0, 670, 143], 
+        [130, 143, 143, 128], 
+        [60, 337, 213, 265], 
+        [270, 402, 411, 200], 
+        [534, 212, 147, 200],
+        [751, 143, 49, 457]
+    ],
+    "starting_pad": [80, 140, 30, 30],
+    "goal_pad": [700, 440, 30, 30],
+    "rebuild_level_on_death": true,
+    "trigger_and_enemy_collisions": true,
+    "moving_enemies": [
+        {
+            "id": "block0",
+            "path_points": [[280, 150]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block1",
+            "path_points": [[342, 150]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block2",
+            "path_points": [[404, 150]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block3",
+            "path_points": [[466, 150]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block4",
+            "path_points": [[280, 212]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block5",
+            "path_points": [[342, 212]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block6",
+            "path_points": [[404, 212]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block7",
+            "path_points": [[466, 212]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block9",
+            "path_points": [[342, 274]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block10",
+            "path_points": [[404, 274]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block11",
+            "path_points": [[466, 274]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block13",
+            "path_points": [[342, 336]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block14",
+            "path_points": [[404, 336]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "block15",
+            "path_points": [[466, 336]],
+            "speed": 3,
+            "move_every_n-th_frame": 1,
+            "size": [60, 60]
+    
+        },
+        {
+            "id": "steps_executor",
+            "path_points": [[2, 750]],
+            "speed": 0,
+            "move_every_n-th_frame": 1,
+            "size": [800, 20]
+    
+        }
+    ],
+    "triggers":[
+        {
+            "id": "scramble_start",
+            "position": [280, 274],
+            "size": [60, 60],
+            "color_rgba": [0, 0, 0, 255],
+            "exists": true,
+            "re_enable_rate": -1,
+            "on_enemy_trigger":[],
+            "on_player_trigger":[
+                
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step1",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step2",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step3",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step4",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step5",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step6",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step7",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step8",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step9",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step10",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step11",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step12",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step13",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step14",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step15",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step16",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step17",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step18",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step19",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step20",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step21",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step22",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step23",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step24",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step25",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step26",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step27",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step28",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step29",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step30",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step31",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step32",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_state",
+                    "arguments":[
+                        "step33",
+                        0
+                    ]
+                },
+                {
+                    "function_id": "moving_enemy_teleport",
+                    "arguments": [
+                        "steps_executor",
+                        [2, 635]
+                    ]
+                },
+                {
+                    "function_id": "yourself_resize",
+                    "arguments":[
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step1",
+            "position": [5, 630],
+            "size": [3, 30],
+            "color_rgba": [0, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": 80,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block9",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block9",
+                        0,
+                        [280, 274]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step1",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step2",
+            "position": [10, 630],
+            "size": [3, 30],
+            "color_rgba": [0, 255, 0, 255],
+            "exists": true,
+            "re_enable_rate": 140,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block13",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block13",
+                        0,
+                        [342, 274]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step2",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step3",
+            "position": [15, 630],
+            "size": [3, 30],
+            "color_rgba": [0, 255, 255, 255],
+            "exists": true,
+            "re_enable_rate": 240,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block9",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block9",
+                        0,
+                        [280, 336]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step3",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step4",
+            "position": [20, 630],
+            "size": [3, 30],
+            "color_rgba": [0, 0, 0, 255],
+            "exists": true,
+            "re_enable_rate": 320,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block13",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block13",
+                        0,
+                        [280, 274]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step4",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step5",
+            "position": [25, 630],
+            "size": [3, 30],
+            "color_rgba": [255, 0, 255, 255],
+            "exists": true,
+            "re_enable_rate": 400,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block10",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block10",
+                        0,
+                        [342, 274]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step5",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step6",
+            "position": [30, 630],
+            "size": [3, 30],
+            "color_rgba": [255, 255, 0, 255],
+            "exists": true,
+            "re_enable_rate": 440,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block14",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block14",
+                        0,
+                        [404, 274]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step6",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step7",
+            "position": [35, 630],
+            "size": [3, 30],
+            "color_rgba": [125, 125, 125, 255],
+            "exists": true,
+            "re_enable_rate": 520,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block10",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block10",
+                        0,
+                        [342, 336]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step7",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step8",
+            "position": [40, 630],
+            "size": [3, 30],
+            "color_rgba": [255, 0, 0, 255],
+            "exists": true,
+            "re_enable_rate": 580,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block5",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block5",
+                        0,
+                        [342, 274]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step8",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step9",
+            "position": [45, 630],
+            "size": [3, 30],
+            "color_rgba": [80, 255, 150, 255],
+            "exists": true,
+            "re_enable_rate": 640,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block1",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block1",
+                        0,
+                        [342, 212]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step9",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step10",
+            "position": [50, 630],
+            "size": [3, 30],
+            "color_rgba": [150, 90, 150, 255],
+            "exists": true,
+            "re_enable_rate": 690,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block2",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block2",
+                        0,
+                        [342, 150]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step10",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step11",
+            "position": [55, 630],
+            "size": [3, 30],
+            "color_rgba": [200, 49, 255, 255],
+            "exists": true,
+            "re_enable_rate": 740,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block6",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block6",
+                        0,
+                        [404, 150]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step11",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step12",
+            "position": [55, 630],
+            "size": [3, 30],
+            "color_rgba": [200, 49, 255, 255],
+            "exists": true,
+            "re_enable_rate": 800,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block14",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block14",
+                        0,
+                        [404, 212]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step12",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step13",
+            "position": [60, 630],
+            "size": [3, 30],
+            "color_rgba": [14, 109, 78, 255],
+            "exists": true,
+            "re_enable_rate": 940,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "block11",
+                        0
+                    ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[
+                        "block11",
+                        0,
+                        [404, 274]
+                    ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[
+                        "step13",
+                        -1
+                    ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step14",
+            "position": [65, 630],
+            "size": [3, 30],
+            "color_rgba": [1, 205, 33, 255],
+            "exists": true,
+            "re_enable_rate": 980,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block15",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block15", 0, [466, 274] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step14", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step15",
+            "position": [70, 630],
+            "size": [3, 30],
+            "color_rgba": [180, 26, 27, 255],
+            "exists": true,
+            "re_enable_rate": 1060,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block11",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block11", 0, [404, 336] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step15", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step16",
+            "position": [75, 630],
+            "size": [3, 30],
+            "color_rgba": [90, 13, 222, 255],
+            "exists": true,
+            "re_enable_rate": 1120,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block15",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block15", 0, [404, 274] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step16", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step17",
+            "position": [80, 630],
+            "size": [3, 30],
+            "color_rgba": [69, 69, 69, 255],
+            "exists": true,
+            "re_enable_rate": 1240,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block11",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block11", 0, [466, 336] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step17", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step18",
+            "position": [85, 630],
+            "size": [3, 30],
+            "color_rgba": [46, 97, 110, 255],
+            "exists": true,
+            "re_enable_rate": 1300,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block15",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block15", 0, [404, 336] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step18", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step19",
+            "position": [90, 630],
+            "size": [3, 30],
+            "color_rgba": [5, 255, 47, 255],
+            "exists": true,
+            "re_enable_rate": 1400,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block14",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block14", 0, [404, 274] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step19", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step20",
+            "position": [95, 630],
+            "size": [3, 30],
+            "color_rgba": [111, 222, 255, 255],
+            "exists": true,
+            "re_enable_rate": 1500,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block14",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block14", 0, [404, 212] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step20", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step21",
+            "position": [100, 630],
+            "size": [3, 30],
+            "color_rgba": [76, 13, 255, 255],
+            "exists": true,
+            "re_enable_rate": 1600,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block7",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block7", 0, [466, 274] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step21", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step22",
+            "position": [100, 630],
+            "size": [3, 30],
+            "color_rgba": [55, 166, 77, 255],
+            "exists": true,
+            "re_enable_rate": 1680,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block14",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block14", 0, [466, 212] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step22", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step23",
+            "position": [105, 630],
+            "size": [3, 30],
+            "color_rgba": [255, 50, 12, 255],
+            "exists": true,
+            "re_enable_rate": 1770,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block5",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block5", 0, [404, 274] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step23", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step24",
+            "position": [110, 630],
+            "size": [3, 30],
+            "color_rgba": [180, 37, 92, 255],
+            "exists": true,
+            "re_enable_rate": 1840,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block13",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block13", 0, [342, 274] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step24", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step25",
+            "position": [115, 630],
+            "size": [3, 30],
+            "color_rgba": [37, 92, 180, 255],
+            "exists": true,
+            "re_enable_rate": 1900,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block4",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block4", 0, [280, 274] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step25", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step26",
+            "position": [120, 630],
+            "size": [3, 30],
+            "color_rgba": [1,33,7, 255],
+            "exists": true,
+            "re_enable_rate": 2007,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block1",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block1", 0, [280, 212] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step26", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step27",
+            "position": [125, 630],
+            "size": [3, 30],
+            "color_rgba": [0,16,1, 255],
+            "exists": true,
+            "re_enable_rate": 2080,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block2",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block2", 0, [342, 212] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step27", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step28",
+            "position": [130, 630],
+            "size": [3, 30],
+            "color_rgba": [166,30,37, 255],
+            "exists": true,
+            "re_enable_rate": 2170,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block6",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block6", 0, [342, 150] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step28", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step29",
+            "position": [135, 630],
+            "size": [3, 30],
+            "color_rgba": [13,21,160, 255],
+            "exists": true,
+            "re_enable_rate": 2330,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block3",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block3", 0, [404, 150] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step29", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step30",
+            "position": [140, 630],
+            "size": [3, 30],
+            "color_rgba": [13,210,16, 255],
+            "exists": true,
+            "re_enable_rate": 2400,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block14",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block14", 0, [466, 150] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step30", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step31",
+            "position": [145, 630],
+            "size": [3, 30],
+            "color_rgba": [120, 0, 0, 255],
+            "exists": true,
+            "re_enable_rate": 2450,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block3",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block3", 0, [404, 212] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step31", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step32",
+            "position": [150, 630],
+            "size": [3, 30],
+            "color_rgba": [20, 255, 20, 255],
+            "exists": true,
+            "re_enable_rate": 2500,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block14",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block14", 0, [404, 150] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step32", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        },
+        {
+            "id": "step33",
+            "position": [155, 630],
+            "size": [3, 30],
+            "color_rgba": [12,34,56 , 255],
+            "exists": true,
+            "re_enable_rate": 2600,
+            "on_player_trigger":[],
+            "on_enemy_trigger":[
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[ "block14",0 ]
+                },
+                {
+                    "function_id":"moving_enemy_insert_path_point",
+                    "arguments":[ "block14", 0, [466, 150] ]
+                },
+                {
+                    "function_id": "trigger_set_re_enable_rate",
+                    "arguments":[ "step32", -1 ]
+                },
+                {
+                    "function_id": "yourself_disable",
+                    "arguments":[]
+                }
+            ]
+        }
+    ]
+}

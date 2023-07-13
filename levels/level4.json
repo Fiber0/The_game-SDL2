@@ -1,0 +1,132 @@
+{
+    "level_name": "hevy rain",
+    "enemies": [[0, 500, 800, 100 ]],
+    "starting_pad": [750, 250, 30, 30],
+    "goal_pad": [10, 250, 30, 30],
+
+    "moving_enemies": [
+        {
+            "path_points": [[610, 0], [610, 600], [800, 600], [800, -20], [610, -20]],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[800, 550], [800, -20], [610, -20], [610, 600], [800, 600]],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[600, -20], [510, -20], [510, 600], [800, 600], [800, -20]],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[800, 600], [800, -20], [600, -20], [510, -20], [510, 600]  ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[800, 550], [800, -20], [410, -20], [410, 600], [800, 600]],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        }, 
+        {
+            "path_points": [[410, 600], [800, 600], [800, -20], [410, -20] ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[410, -20], [410, 600], [800, 600], [800, -20] ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[800, -20], [310, -20], [310, 600], [800, 600] ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[310, 600], [800, 600], [800, -20], [310, -20] ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[800, 400], [800, -20], [310, -20], [310, 600], [800, 600]  ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[800, 600], [800, -20], [210, -20], [210, 600]  ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        }, 
+        {
+            "path_points": [[800, -20], [210, -20], [210, 600], [800, 600] ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[210, -20], [210, 600], [800, 600], [800, -20]],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [ [210, 600], [800, 600], [800, -20], [210, -20]],
+            "speed":6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[800, -20], [110, -20], [110, 600], [800, 600] ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[800, 600], [800, 600], [800, -20], [110, -20], [110, 600] ],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        },
+        {
+            "path_points": [[110, 600], [800, 600], [800, -20], [110, -20]],
+            "speed": 6,
+            "move_every_n-th_frame": 1,
+            "size": [80, 20]
+
+        }
+
+
+
+
+    ]
+}
