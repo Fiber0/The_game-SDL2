@@ -7,7 +7,7 @@ welcome to The_Game! In this game you play as a black square trying to get to gr
 - **A** move left (in the menu selection or player square)
 - **S** move down (in the menu selection or player square)
 - **D** move right (in the menu selection or player square)
-- **SPACE** in menu: confirm selection; in game: action button\n
+- **SPACE** in menu: confirm selection; in game: action button<br>
 this game doesn't support mouse (yet).
 ## install && setup
 
