@@ -1,5 +1,7 @@
 {
     "level_name": "meet the movers",
+    "difficulty": 1,
+    "tip": "as you can guess, the square before the level name indicates difficulty. green is the easiest and purlpe is the hardest.",
     "enemies": [[600, 10, 80, 550], [400, 40, 60, 550], [200, 50, 60, 490 ]],
     "starting_pad": [720, 200, 30, 30],
     "goal_pad": [50, 520, 30, 30],

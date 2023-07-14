@@ -1,5 +1,7 @@
 {
     "level_name": "circiut board",
+    "difficulty": 1,
+    "tip": "<random>",
     "enemies":  [
             
   [50, 150, 50, 350],   

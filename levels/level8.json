@@ -1,5 +1,7 @@
 {
     "level_name": "lava run",
+    "difficulty": 2,
+    "tip": "better hurry up!",
     "enemies": [[0, 0, 520, 320], [0, 460, 120, 140], [240, 320, 280, 140], [660, 120, 140, 480]],
     "starting_pad": [80, 370, 30, 30],
     "goal_pad": [750, 40, 30, 30],
@@ -17,7 +19,7 @@
         {
             "id": "tunell_a_left_right",
             "path_points": [[120, 460], [620, 460]],
-            "speed": 6,
+            "speed": 5,
             "move_every_n-th_frame": 1,
             "size": [40,70]
 
@@ -25,7 +27,7 @@
         {
             "id": "tunell_a_right_left",
             "path_points": [[620, 530], [120, 530]],
-            "speed": 6,
+            "speed": 5,
             "move_every_n-th_frame": 1,
             "size": [40,70]
 
@@ -69,7 +71,7 @@
             
             "position": [120, 460],
             "size": [120, 5],
-            "color_rgba": [255, 255, 255, 255],
+            "color_rgba": [255, 255, 255, 0],
             "exists": true,
             
             "on_player_trigger":[
@@ -93,11 +95,7 @@
                         1
                     ]
                 }
-
             ]
         }
     ]
-
-
-
 }

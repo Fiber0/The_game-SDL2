@@ -1,5 +1,6 @@
 {
     "level_name": "scramble",
+    "difficulty": 1,
     "enemies": [
         [0, 0, 60, 600], 
         [130, 0, 670, 143], 
@@ -140,7 +141,7 @@
             "id": "scramble_start",
             "position": [280, 274],
             "size": [60, 60],
-            "color_rgba": [0, 0, 0, 255],
+            "color_rgba": [255, 255, 255, 255],
             "exists": true,
             "re_enable_rate": -1,
             "on_enemy_trigger":[],

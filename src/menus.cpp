@@ -12,7 +12,7 @@ void menus::all_levels_completed_screen() {
     SDL_Rect deaths_text_rect = { 120, 270, 250, 60 };
     SDL_Rect back_to_menu_button_bg = { 230, 480, 300, 90 };
     SDL_Rect back_to_menu_button_border = { 228, 478, 304, 94 };
-    
+     
     SDL_Rect sum_up_border_bottom_rect = { 80, 250, 640, 200 };
     SDL_Rect sum_up_border_cover_rect = { 90, 260, 620, 180 };
 
@@ -244,7 +244,7 @@ void menus::pause_menu() {
 
 short menus::scan_for_levels_and_report() {
     short len_of_levels_before = game.available_levels_vect.size();
-    game.inicialize_levels_vec("");
+    game.inicialize_levels_vec("../levels");
     cout << "found " << game.available_levels_vect.size() - len_of_levels_before << " new levels\n";
     
     return game.available_levels_vect.size() - len_of_levels_before;
