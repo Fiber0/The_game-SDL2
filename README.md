@@ -15,13 +15,13 @@ this game doesn't support mouse (yet).
 - SDL2
 - SDL2_ttf
 - SDL2_image
-- nlohmann-json
-on linux you would need to install those through your package manager.
+- nlohmann-json<br>
+on linux you would need to install those through your package manager.<br>
 arch linux: sudo pacman -S sdl2 sdl2_ttf sdl2_image nlohmann-json
 
 **1. clone this repository**
 for HTTPS clone (linux):
-git clone https://github.com/coconut41/The_game-SDL2.git 
+git clone https://github.com/coconut41/The_game-SDL2.git <br>
 for HTTPS clone (Windows):
 click the green "Code" button at repository page and Download ZIP
 
@@ -29,8 +29,8 @@ click the green "Code" button at repository page and Download ZIP
 - specify the compilator command (g++, clang...)
 - link the sdl2 libraries: -lSDL2 -lSDL2_ttf -lSDL2_image
 - compile all 4 .cpp files present in src directory: mainf.cpp menus.cpp moving_enemy.cpp trigger.cpp
-- after the compilation is completed (it may take several minutes) just launch the output file, if you didn't specify the -o option, it will be named a.out (on linux)
-for g++ the minimalistic compilation command will look like this:
+- after the compilation is completed (it may take several minutes) just launch the output file, if you didn't specify the -o option, it will be named a.out (on linux)<br>
+for g++ the minimalistic compilation command will look like this:<br>
 g++ -lSDL2 -lSDL2_ttf -lSDL2_image mainf.cpp menus.cpp moving_enemy.cpp trigger.cpp
 
 ## contributions
