@@ -1,6 +1,7 @@
 {
 "level_name": "Boss1: the eye of cthulhu",
 "difficulty": 4,
+"tip": "This one is not THAT hard, it's just you being THAT bad.\n(sure this doesn't apply to everyone)",
 "enemies": [],
 "starting_pad": [30, 530, 30, 30],
 "goal_pad": [760, 560, 30, 30],
@@ -479,7 +480,7 @@
         "size": [1, 1],
         "color_rgba": [0, 0, 255, 255],
         "exists": false,
-        "re_enable_rate": 5,
+        "re_enable_rate": 6,
         "on_player_trigger":[],
         "on_enemy_trigger":[
             {
@@ -1019,6 +1020,7 @@
                     [300, 200]
                 ]
             },
+            
             {
                 "function_id": "moving_enemy_set_speed",
                 "arguments":[
@@ -1186,7 +1188,7 @@
                 "function_id": "moving_enemy_set_speed",
                 "arguments":[
                     "triggerer_id",
-                    8
+                    9
                 ]
             },
             {

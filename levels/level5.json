@@ -1,5 +1,6 @@
 {
-    "level_name": "ventilation rush",
+    "level_name": "ventilation shaft",
+    "difficulty": 2,
     "starting_pad": [50, 80, 30, 30],
     "goal_pad": [50, 480, 30, 30],
     "enemies": [[0, 200, 620, 40], [670, 0, 150, 600 ], [215, 55, 90, 90], [515, 55, 90, 90]],

@@ -1,5 +1,7 @@
 {
     "level_name": "wall run",
+    "difficulty": 3,
+    "tip": "Randomized!",
     "enemies": [[0, 0, 800, 150], [0, 450, 800, 150]],
     "starting_pad": [20, 280, 20, 20],
     "goal_pad": [700, 280, 20, 20],
@@ -277,15 +279,6 @@
     
         },
         {
-            "id": "tracker",
-            "path_points": [[-50, -50]],
-            "speed": 0,
-            "move_every_n-th_frame": 2,
-            "after_path_completion": 0,
-            "size": [80,80 ]
-    
-        },
-        {
             "id": "start_blocker",
             "path_points": [[100, 150]],
             "speed": 0,
@@ -318,15 +311,6 @@
                         "start_blocker",
                         [-300, 0]
                     ]
-                },
-                {
-                    "function_id": "moving_enemy_set_speed",
-                    "arguments":[
-                        "tracker",
-                        1
-                        
-                    ]
-
                 },
                 {
                     "function_id": "yourself_resize",
@@ -531,27 +515,6 @@
                     "arguments":[
                         "block_dispenser_5",
                         1
-                    ]
-                },
-                {
-                    "function_id": "moving_enemy_clear_path_points",
-                    "arguments":[
-                        "tracker"
-                    ]
-                },
-                {
-                    "function_id":"moving_enemy_insert_path_point",
-                    "arguments":[
-                        "tracker",
-                        0,
-                        ["<player_x_pos>", "<player_y_pos>"]
-                    ]
-
-                },
-                {
-                    "function_id": "moving_enemy_set_movement_type",
-                    "arguments": [
-                        "tracker"
                     ]
                 },
                 {

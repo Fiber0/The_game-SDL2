@@ -1,5 +1,7 @@
 {
     "level_name": "triggerable ethics",
+    "difficulty": 3,
+    "tip": "<random>",
     "enemies": [[0, 0, 120, 120], [0, 480, 120, 120], [680, 120, 120, 360]],
     "starting_pad": [30, 285, 30, 30],
     "goal_pad": [745, 530, 30, 30],
@@ -73,7 +75,6 @@
 
         }
         
-     
 
     ],
     "triggers":[
@@ -92,10 +93,7 @@
                         "triggerer_id",
                         500
                     ]
-
                 }
-               
-
             ]  
         },
         {
@@ -115,8 +113,6 @@
                     ]
 
                 }
-               
-
             ]  
         },
         {

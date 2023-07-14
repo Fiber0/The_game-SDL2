@@ -1,5 +1,7 @@
 {
     "level_name": "meet the trigger",
+    "difficulty": 0,
+    "tip": "now trigger is a very interesting object, it can do almost anything and has variety of colors, how cool!",
     "enemies": [[650, 240, 40, 40]],
     "starting_pad": [300, 240, 30, 30],
     "goal_pad": [100, 240, 30, 30],
@@ -39,23 +41,30 @@
         }
     ],
     "triggers":[
-        {
-            
+        { 
             "position": [600, 240],
             "size": [40, 40],
             "color_rgba": [76, 76, 255, 255],
             "exists": true,
-            
+
             "on_player_trigger":[
                 {
                     "function_id": "yourself_disable",
                     "arguments":[]
+                }, 
+                {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block_left",
+                        0
+                    ]
+
                 },
                 {
                 "function_id":"moving_enemy_insert_path_point",
                 "arguments":[
                     "exit_block_left",
-                    1,
+                    0,
                     [-50, 180]
                 ]
 
@@ -74,17 +83,8 @@
                         2
                     ]
 
-                },
-                {
-                    "function_id": "moving_enemy_remove_path_point",
-                    "arguments":[
-                        "exit_block_left",
-                        0
-                    ]
-
                 }
-                
-
+               
             ]
         },
 
@@ -101,10 +101,18 @@
                     "arguments":[]
                 },
                 {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block_right",
+                        0
+                    ]
+
+                },
+                {
                 "function_id":"moving_enemy_insert_path_point",
                 "arguments":[
                     "exit_block_right",
-                    1,
+                    0,
                     [850, 180]
                 ]
 
@@ -123,15 +131,8 @@
                         2
                     ]
 
-                },
-                {
-                    "function_id": "moving_enemy_remove_path_point",
-                    "arguments":[
-                        "exit_block_right",
-                        0
-                    ]
-
                 }
+                
                 
 
             ]
@@ -150,10 +151,18 @@
                     "arguments":[]
                 },
                 {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block_up",
+                        0
+                    ]
+
+                },
+                {
                 "function_id":"moving_enemy_insert_path_point",
                 "arguments":[
                     "exit_block_up",
-                    1,
+                    0,
                     [41, -50]
                 ]
 
@@ -171,17 +180,7 @@
                         "exit_block_up",
                         2
                     ]
-
-                },
-                {
-                    "function_id": "moving_enemy_remove_path_point",
-                    "arguments":[
-                        "exit_block_up",
-                        0
-                    ]
-
                 }
-                
 
             ]
         },
@@ -199,10 +198,17 @@
                     "arguments":[]
                 },
                 {
+                    "function_id": "moving_enemy_remove_path_point",
+                    "arguments":[
+                        "exit_block_down",
+                        0
+                    ]
+                },     
+                {
                 "function_id":"moving_enemy_insert_path_point",
                 "arguments":[
                     "exit_block_down",
-                    1,
+                    0,
                     [41, 650]
                 ]
 
@@ -221,14 +227,8 @@
                         2
                     ]
 
-                },
-                {
-                    "function_id": "moving_enemy_remove_path_point",
-                    "arguments":[
-                        "exit_block_down",
-                        0
-                    ]
-                }     
+                }
+                
             ]
         }
     ]    

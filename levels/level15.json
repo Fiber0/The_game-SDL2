@@ -1,5 +1,7 @@
 {
-    "level_name": "press_space_to_dash",
+    "level_name": "press space to dash",
+    "difficulty": 2,
+    "tip": "the action button (space) can be configured to do almost anything! what it currently does should be specified in tip section.",
     "enemies": [],
     "starting_pad": [700, 570, 20, 20],
     "goal_pad": [380, 20, 30, 30],
@@ -162,7 +164,7 @@
                     "function_id": "trigger_set_re_enable_rate",
                     "arguments":[
                         "on_action_button_recharge",
-                        80
+                        100
                     ]
                 },
                 {

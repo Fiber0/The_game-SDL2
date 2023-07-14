@@ -1,9 +1,8 @@
 {
-    "level_name": "hello again",
+    "level_name": "welcome",
+    "difficulty": 0,
     "enemies": [],
     "moving_enemies": [],
     "starting_pad": [720, 200, 30, 30],
     "goal_pad": [50, 520, 30, 30]
-
-
 }

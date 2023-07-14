@@ -1,5 +1,7 @@
 {
     "level_name": "pipe",
+    "difficulty": 2,
+    "tip": "be aware that your deaths are being counted the whole time.",
     "enemies": [[0, 0, 150, 120], [0, 480, 150, 120], [650, 480, 150, 120], [650, 0, 150, 120], [150, 0, 500, 20], [150, 580, 500, 20]],
     "starting_pad": [10, 290, 30, 30],
     "goal_pad": [60, 160, 30, 30],
@@ -8,7 +10,7 @@
     "moving_enemies": [
         {
             "id": "exit_block",
-            "path_points": [[30,130 ], [800, 330], [800, 330]],
+            "path_points": [[30,130 ], [800, 330]],
             "speed": 0,
             "move_every_n-th_frame": 1,
             "size": [80,80]
@@ -76,6 +78,12 @@
                         16
                     ]
 
+                },
+                {
+                    "function_id": "moving_enemy_set_movement_type",
+                    "arguments": [
+                        "exit_block"
+                    ]
                 },
                 {
                     "function_id": "yourself_resize",
