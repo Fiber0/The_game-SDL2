@@ -9,7 +9,7 @@ Welcome to The_Game! In this game, you play as a black square trying to get to t
 - **D** move right (in the menu selection or player square)
 - **SPACE** in menu: confirm selection; in game: action button<br>
 this game doesn't support mouse (yet).
--**R** restart level
+- **R** restart level
 - **ESCAPE** in game: opens pause menu
 - **P** activates noclip cheat (will set your death counter to 999999)
 ## install && setup
