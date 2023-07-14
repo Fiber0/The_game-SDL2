@@ -19,13 +19,13 @@ this game doesn't support mouse (yet).
 on linux you would need to install those through your package manager.<br>
 arch linux: sudo pacman -S sdl2 sdl2_ttf sdl2_image nlohmann-json
 
-**1. clone this repository**
+**2. clone this repository**
 for HTTPS clone (linux):
 git clone https://github.com/coconut41/The_game-SDL2.git <br>
 for HTTPS clone (Windows):
 click the green "Code" button at repository page and Download ZIP
 
-**2. compile the code**
+**3. compile the code**
 - specify the compilator command (g++, clang...)
 - link the sdl2 libraries: -lSDL2 -lSDL2_ttf -lSDL2_image
 - compile all 4 .cpp files present in src directory: mainf.cpp menus.cpp moving_enemy.cpp trigger.cpp
