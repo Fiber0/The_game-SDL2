@@ -20,9 +20,9 @@ on linux you would need to install those through your package manager.<br>
 arch linux: sudo pacman -S sdl2 sdl2_ttf sdl2_image nlohmann-json
 
 **2. clone this repository**
-for HTTPS clone (linux):
+for HTTPS clone (linux):<br>
 git clone https://github.com/coconut41/The_game-SDL2.git <br>
-for HTTPS clone (Windows):
+for HTTPS clone (Windows):<br>
 click the green "Code" button at repository page and Download ZIP
 
 **3. compile the code**
