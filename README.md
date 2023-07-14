@@ -18,7 +18,8 @@ this game doesn't support mouse (yet).
 - SDL2_image
 - nlohmann-json<br>
 On Linux you would need to install those through your package manager.<br>
-Arch Linux: sudo pacman -S sdl2 sdl2_ttf sdl2_image nlohmann-json
+Arch Linux: sudo pacman -S sdl2 sdl2_ttf sdl2_image nlohmann-json<br>
+Debian Linux: sudo apt install libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev
 
 **2. Clone this repository**<br>
 for HTTPS clone (Linux):<br>
