@@ -3,7 +3,7 @@
 Welcome to The_Game! In this game, you play as a black square trying to get to the green square to proceed to the next level. However, there will be red and orange rectangles getting in your way (red are stationary, orange are moving). As the game progresses, "triggers" will show up. Trigger is a rectangle of any color that can do almost anything when you or a moving enemy collides with it. Can you make it through all 15 challenging levels? I made this game mainly to learn about the SDL2 library and to practice C++.
 
 <p align="center">
-  <img src="https://github.com/coconut41/The_game-SDL2/blob/main/gameplay_pictures/menu_1.png?raw=true" alt="game_menu_image"/>
+  <img src="https://github.com/coconut41/The_game-SDL2/blob/main/gameplay_pictures/menu_1.png?raw=true" alt="game_menu_image" width="400" height="300"/>
 </p>
 
 
